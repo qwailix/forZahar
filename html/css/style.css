@@ -3,11 +3,19 @@ body {
       font-family: Arial, sans-serif;
       background-color: #f0f0f0; 
     }
+    .background{
+      box-sizing:border-box;
+    }
 header {
     background-color: #ffffff;
     color: #000000;
     padding: 15px 20px;
     box-sizing: border-box;
+    }
+  
+    .logo-img{
+    max-width: 50px;
+    margin-right: 10px;
     }
    .top-bar {
       display: flex;
@@ -20,26 +28,26 @@ header {
       gap: 15px;
       flex: 1 1 auto;
       justify-content: center;
-      flex-wrap: wrap;
     }
+
     .center-nav a {
       color: #004080;
       text-decoration: none;
       font-weight: 500;
       padding: 8px 12px;
-      border-radius: 4px;
-      transition: background-color 0.3s;
       user-select: none;
     }
     .center-nav a:hover {
       background-color: #cce0ff;
     }
     .center-nav a:active {
-      background-color: #99c2ff; /* темнее при нажатии */
+      background-color: #99c2ff; 
     }
-    /* Правая группа из 3 ссылок (ранее левая) */
+   
     .right-nav {
       display: flex;
+      justify-content: right;
+      font-weight: 500;
       gap: 15px;
       flex: 0 0 auto;
     }
@@ -56,37 +64,63 @@ header {
       background-color: #cce0ff;
     }
     .right-nav a:active {
-      background-color: #99c2ff; /* темнее при нажатии */
+      background-color: #99c2ff; 
     }
-    /* Нижняя панель с кнопкой и поиском */
+
+    .dropdown-bottom{
+      color: #494242;
+      display: flex;
+      justify-content: right;
+      font-weight: 500;
+      gap: 15px;
+      flex: 0 0 auto;
+    }
+    .dropdown-bottom a{
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 12px;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+      user-select: none;
+    }
+
+    .catalog-button-office a:{
+      background-color: #333;
+    }
+    .catalog-button-office a:{
+      background-color: #222222;
+    }
+
     .bottom-bar {
       margin-top: 12px;
       display: flex;
       align-items: center;
+      justify-content: center;
       gap: 15px;
       flex-wrap: wrap;
     }
+  
     .catalog-button {
-      background-color: #004080; /* синий */
+      background-color: #004080;
       border: none;
       padding: 8px 18px;
       color: white;
       font-weight: bold;
-      border-radius: 4px;
       cursor: pointer;
       transition: background-color 0.3s;
       flex: 0 0 auto;
       user-select: none;
     }
+
     .catalog-button:hover {
       background-color: #003366;
     }
     .catalog-button:active {
-      background-color: #002244; /* темнее при нажатии */
+      background-color: #002244; 
     }
     .search-container {
       flex: 1 1 auto;
-      max-width: calc(6 * 12px + 6 * (8px*2) + 5 * 15px);
+      max-width: calc(6 * 70px + 6 * (8px*2) + 5 * 100px);
     }
 
     .search-container input[type="text"] {
@@ -96,7 +130,7 @@ header {
       border: 1px solid #ccc;
       font-size: 14px;
       outline: none;
-      background-color: #e0e0e0; /* серый фон */
+      background-color: #e0e0e0;
       color: #333;
       box-sizing: border-box;
       transition: background-color 0.3s, border-color 0.3s;
