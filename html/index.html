@@ -5,36 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body> 
-    <header>
-        <div class="top-bar"></div>
-            <nav class="right-nav">
-                    <li><a href="log.html">Войти</a></li>
-                    <li><a href="bascet.html">Корзина</a></li>
-            </nav>
-            <nav class="center-nav">
-                    <li><a href="number.html">8-800-550-19-80</a></li>
-                    <li><a href="details.html">Подбор запчастей</a></li>
-                    <li><a href="delivery.html">Доставка</a></li>
-                    <li><a href="howtobuy.html">Как купить</a></li>
-                    <li><a href="pay.html">Оплата</a></li>
-                    <li><a href="sale.html">Акции</a></li>
-                    <li><a href="contact.html">Контакты</a></li>
-            </nav>
+    <header> <!--шапочка еее-->
+        <div class="top-bar">
+
+          <nav class="logo-img"><!--логотипчик-->
+            <img href="index.html" class="logo-img" src="../img/logo.png" alt="logo"></img>
+          </nav>
+
+          <nav class="center-nav"><!--это центр-->
+            <button class="dropdown-bottom" type="button" aria-label="Выбрыть офис на Малиновского">Офис на Малиновского <img src="../img/vniz.png" alt="стрелка вниз"></button>
+            <a href="number.html" class="number">8-800-550-19-80</a>
+            <a href="details.html" class="text-nav">Подбор запчастей</a>
+            <a href="delivery.html">Доставка</a>
+            <a href="howtobuy.html">Как купить</a>
+            <a href="pay.html">Оплата</a>
+            <a href="sale.html">Акции</a>
+            <a href="contact.html">Контакты</a>
+          </nav>
+
+          <nav class="right-nav"><!--это право-->
+            <a href="log.html"><img src="../img/General Icons.png">Войти</a>
+            <a href="bascet.html"><img src="../img/Empty.png">Корзина</a>
+          </nav>
+        </div>  
+ 
+         <div class="bottom-bar"><!--это кнопка и поиск-->
+          <button class="catalog-button" type="button"><img src="../img/Catalog Burger.png">Каталог</button>
+          <div class="search-container">
+          <input type="text" img src="../img/zalypa.png" placeholder="Что ищите?" aria-label="Поиск по сайту"/>
         </div>
-        <div class="bottom-bar">
-      <button class="catalog-button" type="button">Каталог</button>
-      <div class="search-container">
-        <input type="text" placeholder="Что ищите?" aria-label="Поиск по сайту" />
-      </div>
-    </div>
     </header>
+
+<!-- картинки, фон и тд-->
+
     <div class="body_st">
-
+      <div class="backround">
+        <img class="backround-yellow" src="../img/fon.png" alt="backround"></img>
+        <img src="../img/felix.png" width="269" height="330" alt="мотор" class="motor"></img>
+        <img src="../img/felix_name.png" width="114" height="40" alt="феликс" class="felix"></img>
+        <img src="../img/awm.png" width="450" height="356" alt="щетки" class="awm"></img>
+        <img src="../img/motor_oil.png" width="950" height="356" alt="ростод" class="motor_oil"></img>
+      </div>
+      
+      <div class="info-blocks">
+        <div class="block">Бесплатный звонок</div>
+        <div class="block">Бесплатный подбор</div>
+        <div class="block">Бесплатная доставка</div>
+      </div>
+      <!--блоки хуйни <div class="info-blocks">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+      </div> -->
     </div>
-    
-</body>
 
+
+  <footer>
+    <div class="podval"><!--подвальчик тут херня какая-то-->
+      <h2>
+        <a href="#!">Подбор запчастей</a>
+        <a href="delivery.html">Доставка</a>
+        <a href="howtobuy.html">Как купить</a>
+        <a href="pay.html">Оплата</a>
+        <a href="#!">Договор оферты</a>
+        <a href="#!">Политика конфиденциальности</a>
+        <a href="#!">Реквизиты</a>
+        <a href="contact.html">Контакты</a>
+        <a href="sale.html">Акции</a>
+      </h2>  
+    </div>
+  </footer>  
+</body>
 </html>
