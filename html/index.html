@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Document</title>
+    <title>trml.ru</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
@@ -13,11 +13,11 @@
         <div class="top-bar">
 
           <nav class="logo-img"><!--логотипчик-->
-            <img href="index.html" class="logo-img" src="../img/logo.png" alt="logo"></img>
-          </nav>
+            <a href="index.html" class="logo"> <img src="./img/logo.png" alt="Лого"> </a>
+          </nav> 
 
           <nav class="center-nav"><!--это центр-->
-            <button class="dropdown-bottom" type="button" aria-label="Выбрыть офис на Малиновского">Офис на Малиновского <img src="../img/vniz.png" alt="стрелка вниз"></button>
+            <button class="dropdown-bottom" type="button" aria-label="Выбрыть офис на Малиновского">Офис на Малиновского <img src="./img/vniz.png" alt="вниз"></button>
             <a href="number.html" class="number">8-800-550-19-80</a>
             <a href="details.html" class="text-nav">Подбор запчастей</a>
             <a href="delivery.html">Доставка</a>
@@ -28,15 +28,15 @@
           </nav>
 
           <nav class="right-nav"><!--это право-->
-            <a href="log.html"><img src="../img/General Icons.png">Войти</a>
-            <a href="bascet.html"><img src="../img/Empty.png">Корзина</a>
+            <a href="log.html"><img src="./img/General Icons.png">Войти</a>
+            <a href="bascet.html"><img src="./img/Empty.png">Корзина</a>
           </nav>
         </div>  
  
          <div class="bottom-bar"><!--это кнопка и поиск-->
-          <button class="catalog-button" type="button"><img src="../img/Catalog Burger.png">Каталог</button>
+          <button class="catalog-button" type="button"><img src="./img/Catalog Burger.png">Каталог</button>
           <div class="search-container">
-          <input type="text" img src="../img/zalypa.png" placeholder="Что ищите?" aria-label="Поиск по сайту"/>
+          <input type="text" img src="./img/zalypa.png" placeholder="Что ищите?" aria-label="Поиск по сайту"/>
         </div>
     </header>
 
@@ -44,23 +44,39 @@
 
     <div class="body_st">
       <div class="backround">
-        <img class="backround-yellow" src="../img/fon.png" alt="backround"></img>
-        <img src="../img/felix.png" width="269" height="330" alt="мотор" class="motor"></img>
-        <img src="../img/felix_name.png" width="114" height="40" alt="феликс" class="felix"></img>
-        <img src="../img/awm.png" width="450" height="356" alt="щетки" class="awm"></img>
-        <img src="../img/motor_oil.png" width="950" height="356" alt="ростод" class="motor_oil"></img>
+        <img class="backround-yellow" src="./img/fon.png" alt="backround"></img>
+        <img src="./img/felix.png" width="269" height="330" alt="мотор" class="motor"></img>
+        <img src="./img/felix_name.png" width="114" height="40" alt="феликс" class="felix"></img>
+        <!--<img src="../img/awm.png" width="450" height="356" alt="щетки" class="awm"></img>
+        <img src="../img/motor_oil.png" width="950" height="356" alt="ростод" class="motor_oil"></img>-->
       </div>
       
-      <div class="info-blocks">
-        <div class="block">Бесплатный звонок</div>
-        <div class="block">Бесплатный подбор</div>
-        <div class="block">Бесплатная доставка</div>
+    <div class="text-overlay">
+      <h5 style="font-size: 42px">Масло Felix 4+1</h5>
+      <h2 style="color: black; font-size: 16px">ПОДРОБНЕЕ</h2>
+    </div>
+
+    <div class="rectangle-container"> <!--ебучие контейнеры (начинается всё с БЕСПЛАТНОГО хахаха)-->
+      <div class="white-rectangle">
+          <h1>01</h1>
+            <h3>Бесплатный звонок</h3>
+              <p>На любые номера РФ<br>8-800-550-19-80</p>
       </div>
-      <!--блоки хуйни <div class="info-blocks">
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-      </div> -->
+          <div class="white-rectangle">
+            <h1>02</h1>
+            <h3>Бесплатный подбор</h3>
+            <p>Найдём самую низкую цену на оригинальную запчасть,<br>достойную альтернативу или самый дешёвый аналог.</p>
+      </div>
+      <div class="white-rectangle">
+        <h1>03</h1>
+        <h3>Бесплатная доставка</h3>
+        <p>Согласуем и привезём запчасти в офис или домой в удобное для Вас время.</p>
+      </div>
+
+            <img src="./img/awm.png" width="450" height="356" alt="щетки" class="awm">
+            <img src="./img/motor_oil.png" width="950" height="356" alt="маслщ 3 шт" class="rosdot">
+    </div>
+
     </div>
 
   <footer>

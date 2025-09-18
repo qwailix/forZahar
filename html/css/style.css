@@ -3,6 +3,55 @@ body {
       font-family: Arial, sans-serif;
       background-color: #f0f0f0; 
     }
+.body_fon {
+    position: relative;
+    margin: 30px 50px 50px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+   background-image: url('../img/fon.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    z-index: 0;
+}
+.felix{
+    position: absolute;
+    top: 33px;
+    left: 160px;
+}
+
+.motor {
+    position: relative;
+    z-index: 5;
+}
+
+.rectangle-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+    gap: 30px;
+    width: 100%;
+    max-width: 1400px;
+    z-index: 10;
+}
+
+.white-rectangle {
+    height: 216px;
+    background-color: white;
+    padding: 20px;
+}
+
+.awm, .rosdot {
+    z-index: 5;
+}
+
+.podval {
+
+  background-color: #f0f0f0 ;
+}
 header {
     background-color: #ffffff;
     color: #000000;
@@ -42,9 +91,9 @@ header {
       background-color: #cce0ff;
     }
     .center-nav a:active {
-      background-color: #99c2ff; /* темнее при нажатии */
+      background-color: #99c2ff; 
     }
-    /* Правая группа из 3 ссылок (ранее левая) */
+    /* Правая группа из 2 ссылок*/
     .right-nav {
       justify-content: right;
       font-weight: 500;
@@ -152,6 +201,7 @@ header {
       padding: 8px 12px;
       user-select: none;
     }
+/*Вот ниже херьня для адаптации на разн. устройствах 0_0 Тут по высоте  */
 @media (max-width: 768px) {
       .top-bar {
         flex-direction: column;
