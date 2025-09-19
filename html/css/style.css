@@ -1,37 +1,74 @@
 body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Montserrat';
       background-color: #f0f0f0; 
     }
-.body_fon {
-    position: relative;
+
+  h2{
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 10;
+      left: 160px;
+  }
+
+  h5{
+      font-size: 16px;
+      line-height: 150px;
+      font-weight: 10;
+  }
+.body_st .next{
+  position: absolute;
+  z-index: 10;
+  left: 1550px;
+  line-height: 36px;
+}
+.body_st .text-motor{
+  position: absolute;
+  left: 1313px;
+  color: #ffffff;
+}
+.body_st .text-overlay {
+  position: absolute; /* Позиционируем поверх других элементов */
+  top: -20px;          /* Настрой под себя */
+  left: 160px;        /* Как у .felix_name */
+  color: white;       /* Чтобы текст был виден! */
+  z-index: 15;        /* Чтобы был поверх картинок */
+  width: 400px;       /* Или как нужно */
+}
+
+.text-overlay img {
+  margin-left: 80px;
+}
+
+/* Дополнительно: если хочешь, чтобы контейнер .body_st позволил абсолютное позиционирование */
+.body_st {
+    position: relative; /* Это важно! */
     margin: 30px 50px 50px 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
 
-   background-image: url('../img/fon.png');
+    background-image: url('../img/fon.png');
     background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
-
     z-index: 0;
 }
-.felix{
+
+.felix_name{
     position: absolute;
     top: 33px;
     left: 160px;
+    max-width: 114px;
 }
-
 .motor {
     position: relative;
+    top: 40px;
     z-index: 5;
 }
 
 .rectangle-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-
     gap: 30px;
     width: 100%;
     max-width: 1400px;
@@ -48,10 +85,6 @@ body {
     z-index: 5;
 }
 
-.podval {
-
-  background-color: #f0f0f0 ;
-}
 header {
     background-color: #ffffff;
     color: #000000;
@@ -60,11 +93,11 @@ header {
     }
   
     .logo-img{
-    padding: 8px 16px;
-    user-select: none;
-    width: 80px;
-    height: 88px;
-    box-sizing: border-box;
+      padding: 8px 16px;
+      user-select: none;
+      width: 80px;
+      height: 88px;
+      box-sizing: border-box;
     }
 
    .top-bar {
@@ -74,10 +107,11 @@ header {
 
     .center-nav {
       gap: 40px;
-      top: 23px;
       flex: auto;
       max-height: 20px;
       justify-content: center;
+      position: relative;
+      margin-left: 300px;
     }
     .center-nav a {
       color: #000000;
@@ -93,6 +127,13 @@ header {
     .center-nav a:active {
       background-color: #99c2ff; 
     }
+
+    .dropdown-bottom{
+      border: none;
+      background-color: #ffffff;
+      color: #575252;
+      margin-right: 15px;
+    }
     /* Правая группа из 2 ссылок*/
     .right-nav {
       justify-content: right;
@@ -101,6 +142,7 @@ header {
       top: 15px;
       flex: horizontal;
       flex: 0 0 auto;
+      left: 625px;
     }
     .right-nav a {
       color: #000000;
@@ -122,7 +164,6 @@ header {
       width: 24px;
       height: 24px;
     }
-
     .bottom-bar {
       display: flex;
       margin-top: 12px;
@@ -164,7 +205,7 @@ header {
     }
 
     .search-container {
-      flex: 1 1 auto;
+      flex: auto;
       max-width: calc(6 * 70px + 6 * (8px*2) + 5 * 100px);
     }
 
@@ -190,7 +231,7 @@ header {
     top: 23px;
     flex: auto;
     max-height: 20px;
-    justify-content: center;
+    
     top: 1107px;
   }
     .podval a{
@@ -201,7 +242,7 @@ header {
       padding: 8px 12px;
       user-select: none;
     }
-/*Вот ниже херьня для адаптации на разн. устройствах 0_0 Тут по высоте  */
+/*Вот ниже херьня для адаптации на разн. устройствах 0_0 Тут по высоте.  мб не работает */
 @media (max-width: 768px) {
       .top-bar {
         flex-direction: column;
